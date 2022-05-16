@@ -1,8 +1,23 @@
-.title{
-    text-align:right;
-    font-size:40px;
+.box{
+    margin: 0 auto;
+    color:thistle;
+    padding-bottom:60vh;
+    margin:2px;
 }
-.Box{
-    align-items:left;
-    
+.button{
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+    margin-right:5px;
+}
+
+.button:hover {
+    background: #318aac;
+    color: #fff !important;
 }

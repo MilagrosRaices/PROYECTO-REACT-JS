@@ -1,14 +1,15 @@
 import './NavBar.css'
 
-const NavBar = () => {
-    return (
-        <nav>
-            <h1 className="Title">Antoniette's Boutique</h1>
-            <div className="Box">
-                <button>Vestidos Formales</button>
-                <button>Outfits Casuales</button>
-                <button>Calzado</button>
-                <button>Novedades</button>
+const NavBar = ()  => {
+    return(
+        <nav className='box'>
+            <h1>Antoniette's Boutique</h1>
+            <div>
+                <button className='button'>Vestidos Formales</button>
+                <button className='button'>Outifits Casuales</button>
+                <button className='button'>Calzado</button>
+                <button className='button'>Novedades</button>
+
             </div>
         </nav>
     )
