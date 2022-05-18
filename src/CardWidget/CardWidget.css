@@ -1,0 +1,6 @@
+.ShoppingCart{
+   filter: brightness(1.1);
+   mix-blend-mode:multiply;
+   padding-left: 120vh;
+   margin-bottom:2%;
+}
