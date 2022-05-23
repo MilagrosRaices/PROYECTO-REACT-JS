@@ -1,16 +1,20 @@
 //import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './ItemListContainer/ItemListContainer'; 
+import ItemListContainer from './ItemListContainer/ItemListContainer';
+import ItemCount from './ItemCount/ItemCount';
 
 
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         <ItemListContainer greeting="Bienvenidos a su Boutique"/>
-        <NavBar />
+        <NavBar /> 
+        <ItemCount />
+        
       </header>
     </div>
   );
