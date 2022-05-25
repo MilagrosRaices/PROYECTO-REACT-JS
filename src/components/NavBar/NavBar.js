@@ -5,14 +5,15 @@ const NavBar = ()  => {
     return(
         <nav className='box'>
             <div>
-                <button className='button'>Vestidos Formales</button>
-                <button className='button'>Outifits Casuales</button>
-                <button className='button'>Calzado</button>
-                <button className='button'>Novedades</button>
+                <button className='button'>SmarPhones</button>
+                <button className='button'>Notebooks</button>
+                <button className='button'>VideoJuegos</button>
+                <button className='button'>Merch</button>
                 <CardWidget />
-            </div>
+            </div>  
         
         </nav>
     )
 }
 export default NavBar
+

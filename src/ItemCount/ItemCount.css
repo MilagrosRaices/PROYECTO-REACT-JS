@@ -1,5 +1,9 @@
 .count{
     display: flex;
-    justify-content: center; 
-    padding-bottom: 50vh; 
+    justify-content: center;
+    border-width: 15px; 
+}
+img{
+    max-width:300px;
+    
 }
