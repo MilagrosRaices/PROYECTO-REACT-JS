@@ -1,9 +1,8 @@
 //import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './ItemListContainer/ItemListContainer';
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './ItemListContainer/ItemListContainer'; 
 import ItemCount from './ItemCount/ItemCount';
-import Button from './ItemCount/button';
 
 
 
@@ -15,8 +14,6 @@ function App() {
         <ItemListContainer greeting="Bienvenidos a Tech Zone"/>
         <NavBar /> 
         <ItemCount />
-        <Button />
-        
       </header>
     </div>
   );
