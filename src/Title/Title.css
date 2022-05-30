@@ -1,4 +1,4 @@
-/* .ItemListContainer{
+.ItemListContainer{
     color: transparent;
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
     background-clip: text;
@@ -14,12 +14,6 @@
     to {
         background-position: 100% 50%;
     }
-} */
-
-.contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 

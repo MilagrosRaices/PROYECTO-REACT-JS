@@ -1,11 +1,13 @@
+
 import React from 'react'
-import './Item.css'
+import ItemCount from '../ItemCount/ItemCount'
+import s from './Item.module.css'
 
 function Item({imagen, nombre, id, precio, stock}) {
   return (
-    <div className={cardContainer} key={id}>
-    <img src={imagen} alt={nombre} className={componentsImg}/>
-    <div className={cardInfo}>
+    <div className={s.cardContainer} key={id}>
+    <img src={imagen} alt={nombre} className={s.componentsImg}/>
+    <div className={s.cardInfo}>
         <h4><b>{nombre}</b></h4> 
         <p>$ {precio}</p> 
     </div>

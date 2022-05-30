@@ -1,9 +1,9 @@
-const products = [
+const productos = [
     {
         id: 1,
         nombre: 'SmartPhone',
-        precio: 45000,
-        imagen: 'https://m.media-amazon.com/images/I/81peEYZTLTL._AC_SX569_.jpg',
+         precio: 45000,
+         imagen: 'https://m.media-amazon.com/images/I/81peEYZTLTL._AC_SX569_.jpg',
         stock: 10
     },
     {
@@ -22,4 +22,4 @@ const products = [
     }
 ]
 
-export default products;
+export default productos;

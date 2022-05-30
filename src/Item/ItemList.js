@@ -1,17 +1,17 @@
-import React from 'react'
-import Item from './Item/Item'
-import './Item.css'
 
-function ItemList ({products}) {
+import React from 'react'
+import Item from './Item'
+
+function ItemList ({productos}) {
     return (
-        products.map(p => (
+        productos.map(p => (
             <Item
 
-            key={id}
-            nombre={nombre}
-            imagen={imagen}
-            precio={precio}
-            stock={stock}
+            key={p.id}
+            nombre={p.nombre}
+            imagen={p.imagen}
+            precio={p.precio}
+            stock={p.stock}
             />
         )
     )

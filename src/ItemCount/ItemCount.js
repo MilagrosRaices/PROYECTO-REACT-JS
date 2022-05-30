@@ -1,35 +1,37 @@
 import React, { useState } from 'react'
+import s from './ItemCount.module.css'
 
-const ItemCount = (props) => {
- 
-    const [count, setCount] = useState(0)
-    
-    const decrement = () => {
-        if(count > 0){ 
-        setCount(count - 1)
-        
-    }else{
-        alert("No has agregado productos a tu carrito")
-    }
-    }
+function ItemCount({stock}) {
+    const [count, setCount] = useState(0);
 
-    const increment = () => {
-        if(count < 6 ){
-            setCount(count + 1)
-        }else{
-            alert("Has sobrepasado la cantidad de limite del mismo producto")
+    function adding () {
+        if(count < stock) {
+            setCount(count + 1);
+        }
+    }
+    function subs () {
+        if(count > 0) {
+            setCount(count - 1);
         }
     }
 
-    return(
-        <div className='count'>
-            <button onClick={decrement} style={{justifyContent: 'center'}}>-</button>
-            <h1>{count}</h1> 
-            <button onClick={increment}>+</button>
+    function onAdd () {
+        if(count <=0) { alert("No has agregado ningun producto")
+        }else {
+        alert('Has agregado ' + count + ' de productos a tu carrito');
+        }
+    }
+    
+  return (
+    <div>
+        <div className={s.countContainer}>
+            <button onClick={subs} className={s.danger} >-</button>
+            <p className={s.contador}>{count}</p>
+            <button onClick={adding} className={s.success}>+</button>
         </div>
-    )
+        <button onClick={onAdd} className={s.addProduct}>Comprar</button>
+    </div>
+  )
 }
 
 export default ItemCount
-
-
