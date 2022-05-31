@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './Item/ItemListContainer'; 
 import Title from './Title/Title';
-import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './ItemDetailContainer/ItemDetail';
 
 
 
